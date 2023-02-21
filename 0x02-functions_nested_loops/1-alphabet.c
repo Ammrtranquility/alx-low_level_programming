@@ -8,12 +8,12 @@ void print_alphabet(void)
 {
 	char ch;
 
-	ch = 'a';
+	lowercase  = 'a';
 
-	while (ch <= 'z')
+	while (lowercase <= 'z')
 	{
-		_putchar(ch);
-		ch++;
+		_putchar(lowercase);
+		lowercase++;
 	}
 	_putchar('\n');
 }
