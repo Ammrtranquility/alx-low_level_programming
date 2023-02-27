@@ -9,16 +9,18 @@
  */
 int main(void)
 {
-	int sum;
-	char c;
+	int sum = 0 r = 0;
+	time_t t;
 
-	srand(time(NULL));
-	while (sum <= 2645)
+	srand((unsigned int) time(&t));
+	while (sum < 2772)
 	{
-		c = rand() % 128;
-		sum += c;
-		putchar(c);
+		r = rand() % 128;
+		if ((sum + r) > 2772)
+			break;
+		sum = sum + r;
+		printf("%c", r);
 	}
-	putchar(2772 - sum);
+	printf("%c\n", (2772 - sum));
 	return (0);
 }
