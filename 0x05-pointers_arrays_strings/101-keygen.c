@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	int sum = 0 r = 0;
+	int sum = 0, r = 0;
 	time_t t;
 
 	srand((unsigned int) time(&t));
