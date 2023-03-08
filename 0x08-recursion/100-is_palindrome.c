@@ -38,3 +38,17 @@ int comparator(char *s, int m, int n)
 	}
 	return (0);
 }
+
+/**
+ * is_palindrome - a palindrome string.
+ * @s: string.
+ *
+ * Description: detest if a string is a palindrome.
+ * Return: 1 if a string is a palindrome and 0 if not.
+ */
+int is_palindrome(char *s)
+{
+	if (*s == '\0')
+		return (1);
+	return (comparator(s, 0, _strlen_recursion(s) - 1));
+}
